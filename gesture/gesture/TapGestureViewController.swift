@@ -22,7 +22,13 @@ import UIKit
  
  `Bó começar??`
  
- `O primeiro gesture que vamos usar é o Tap, ele reconhece qualquer toque na view na qual ele está conectado. Sua missão incial é implementar um tapgesture para que ele reconheça um toque em qualquer lugar da tela e assim esconda o morango.`
+ `O primeiro gesture que vamos usar é o Tap, ele reconhece qualquer toque na view na qual ele está conectado. Mas calma! sei que pode ser uma surpresa já que ele não apareceu no artigo, e esse é o seu desafio!!`
+ 
+ `Sua missão incial é implementar um tapgesture para que ele reconheça um toque em qualquer lugar da tela e assim esconda o morango.`
+ 
+ `o tapGesture é uma boa maneira de substiruir um button para ações mais gerais, reconhecimento de toques e afins `
+ 
+ `DIVIRTA-SE!`
  
  */
 
@@ -30,9 +36,7 @@ import UIKit
 
 class TapGestureViewController: UIViewController {
     
-    
-    @IBOutlet weak var morangoImagem: UIImageView!
-    
+        
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -10,18 +10,20 @@ import UIKit
 
 /**
  
+ `Tirou braba no PanGesture!`
+ `Bora pra próxima?`
+ 
  `Bora brincar com pinch?`
  
  `Use a imagem do limao para reconhecer um PinchGesturo. Permita que seu tamanho escale.`
  
- dica: no Simulador,  aperte option para que ele identifique 2 toques na tela.
+ dica: no Simulador,  aperte option para que ele identifique os 2 toques na tela.
  
  */
 
 
 class PinchGestureViewController: UIViewController {
 
-    @IBOutlet weak var limaoImagem: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()

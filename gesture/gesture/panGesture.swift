@@ -25,8 +25,6 @@ import UIKit
 class PanGestureViewController: UIViewController {
     
 
-    @IBOutlet weak var maracujaImagem: UIImageView!
-    @IBOutlet weak var sementesImagem: UIImageView!
     
     
     override func viewDidLoad() {
