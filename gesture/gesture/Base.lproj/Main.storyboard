@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cEt-wm-QDW">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="zMP-I2-ciE">
+            <objects>
+                <navigationController id="cEt-wm-QDW" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="D5D-5K-kz0">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ZbE-RF-wLS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zOD-OU-f29" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-801" y="138"/>
+        </scene>
+        <!--tap gesture-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="TapGestureViewController" customModule="gesture" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="morango" translatesAutoresizingMaskIntoConstraints="NO" id="k5G-Rd-6aj">
+                                <rect key="frame" x="153" y="378" width="108" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="tap gesture" prompt="   " id="poB-Th-sTb">
+                        <barButtonItem key="backBarButtonItem" title="    " id="nNM-wq-mID"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="arrow.right" catalog="system" id="NkR-pG-67Z">
+                            <connections>
+                                <segue destination="tHX-85-DKN" kind="show" id="A3t-IH-MU2"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="morangoImagem" destination="k5G-Rd-6aj" id="3ei-Qm-osA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="137.94642857142856"/>
+        </scene>
+        <!--pan gesture-->
+        <scene sceneID="Th7-RC-JGj">
+            <objects>
+                <viewController id="tHX-85-DKN" customClass="PanGestureViewController" customModule="gesture" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6vb-K3-yE5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sementes" translatesAutoresizingMaskIntoConstraints="NO" id="YUd-yf-PU3">
+                                <rect key="frame" x="134" y="532" width="146" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="maracuja" translatesAutoresizingMaskIntoConstraints="NO" id="vaZ-wQ-aMJ">
+                                <rect key="frame" x="110" y="233" width="194" height="189"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="9cg-Ji-9Vp"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="pan gesture" prompt="   " id="IEd-F5-vhS">
+                        <barButtonItem key="backBarButtonItem" title="   " id="zMb-hs-PUC"/>
+                        <barButtonItem key="rightBarButtonItem" title="Next" image="arrow.right" catalog="system" id="VWp-st-9ZS">
+                            <connections>
+                                <segue destination="46F-bB-xj2" kind="show" id="wN8-Z5-meW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="maracujaImagem" destination="vaZ-wQ-aMJ" id="V4P-ne-At5"/>
+                        <outlet property="sementesImagem" destination="YUd-yf-PU3" id="wBk-1w-HZz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2ve-RL-01W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1034.7826086956522" y="137.94642857142856"/>
+        </scene>
+        <!--pinch gesture-->
+        <scene sceneID="oC8-fZ-Cei">
+            <objects>
+                <viewController id="46F-bB-xj2" customClass="PinchGestureViewController" customModule="gesture" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cBB-7t-1Ly">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="limao" translatesAutoresizingMaskIntoConstraints="NO" id="QIq-B8-KMR">
+                                <rect key="frame" x="105" y="337" width="205" height="222"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="YIH-xK-4V2"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="pinch gesture" prompt="   " id="M8f-y3-KtN"/>
+                    <connections>
+                        <outlet property="limaoImagem" destination="QIq-B8-KMR" id="KCX-Fm-025"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="McP-fs-fnb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1957.9710144927537" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.right" catalog="system" width="128" height="98"/>
+        <image name="limao" width="1116" height="1117"/>
+        <image name="maracuja" width="486" height="502"/>
+        <image name="morango" width="1033" height="1639"/>
+        <image name="sementes" width="308" height="324"/>
+    </resources>
+</document>
